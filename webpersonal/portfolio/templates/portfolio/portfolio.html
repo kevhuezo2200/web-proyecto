@@ -2,11 +2,11 @@
 
 {% block title %}Portafolio{% endblock %}
 
-{% block background %}{% load static %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock %}
+{% block background %}{% load static %}{% static 'core/img/port1.jpg' %}{% endblock %}
 
 {% block headers %}
 <h1>Portafolio</h1>
-<span class="subheading">Currículo</span>
+<span class="subheading">Tú lo piensas y nosotros lo hacemos</span>
 {% endblock %}
 
 {% block content %}
@@ -14,7 +14,7 @@
         <!-- Proyecto -->
         <div class="row project">  	
             <div class="col-lg-3 col-md-4 offset-lg-1">
-                <img class="img-fluid" src="{{project.image.url}}" alt="">
+                <img class="img-fluid img-thumbnail" src="{{project.image.url}}" alt="">
             </div>
             <div class="col-lg-7 col-md-8">
                 <h2 class="section-heading title">{{project.title}}</h2>   
