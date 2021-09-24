@@ -77,28 +77,11 @@ WSGI_APPLICATION = 'webpersonal.wsgi.application'
  #Database
  #https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-<<<<<<< HEAD
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
      'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-=======
-#DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.db.backends.sqlite3',
-   #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #}
-#}
-
-import dj_database_url
-from decouple import config 
-
-DATABASE = {
-    'default': dj_database_url.config(
-        defaul=config('DATABASE_URL')
-    )
->>>>>>> c48897167c19fd646b1934ba061af76f18708d7b
 }
 
 #import dj_database_url
@@ -149,7 +132,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-<<<<<<< HEAD
 #STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
@@ -158,16 +140,6 @@ STATIC_URL = '/static/'
 #)
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-=======
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
->>>>>>> c48897167c19fd646b1934ba061af76f18708d7b
 
 # Media files
 MEDIA_URL = '/media/'
